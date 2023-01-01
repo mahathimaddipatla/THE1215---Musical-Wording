@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The 1215</title>
+<script>
+  function jsredir() {
+    window.location.href = "encdec1.html";
+    var usertext;
+    sessionStorage.setItem("usertext", t.value);
+}
+function secret(){
+  window.location.href = "3.html";
+}
+function validation() {
+     var fname = document.getElementById("t").value;
+  console.log(t);
+  if (t.value == "")
+    alert("TextBox is empty");
+  else if (t.value == "THE♫1215"){
+    alert("You entered a secret code");
+    secret();
+  }
+  else
+    jsredir();
+}
+</script>
+
+ <style>
+ body 
+  {
+  background-image: url('images/b2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: right;
+  
+  }
+
+ </style>
+ <link rel="stylesheet" href="styles/style.css" >
+</head>
+
+<!--***********************************************
+  BODY TAG  
+    ***********************************************-->
+
+<body>
+
+
+
+
+ <div class="absolute0">
+ <img src="images/dem11.png" width="170" height="580" />
+ </div>
+
+ <div class="absolute6">
+ <img src="images/12-15_free-file.png">
+ </div>
+ 
+ <div class="absolute">
+  <textarea  type="text" id="t" name="t" style="color: black; background-color: transparent; border-radius: 150px; padding-left: 100px; padding-right: 100px;" rows="15" cols="80"  placeholder="Your text goes here..."></textarea>
+ <div class="absolute4">
+    <div class="container" >
+     <br><br><br><br><br><br>
+     <button class="btn btn4"onclick="validation()">♫</button>
+     <br>
+     
+<!--
+     <button class="btn btn3">♪</button>
+     <br>
+     <button class="btn btn2">♪</button>
+     <br>
+     <button class="btn btn1">♫</button>
+
+
+-->
+
+    </div>
+ </div>
+
+</body>
+</html>

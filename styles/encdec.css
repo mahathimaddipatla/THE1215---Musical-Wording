@@ -1,0 +1,109 @@
+ <html>
+<head>
+
+ <style>
+ body 
+  {
+  background-image: url('b2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: right;
+  
+  }
+  div.absolute0 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  }
+  div.absolute5
+  {
+   position: absolute;
+   bottom: 0px;
+   right: 0px;
+  }
+
+  div.absolute {
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  width: 1010px;
+  height: 510px;
+  ;
+  }
+  div.absolute1 
+  {
+  position: absolute;
+  top: 0px;
+  left: 310px;
+  width: 210px;
+  height: 480px;
+
+  }
+  div.absolute2 
+  {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 110px;
+  height: 110px;
+
+  }
+  div.absolute3 
+  {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  width: 100px;
+  height: 110px;
+
+  }
+  div.absolute4
+  {
+   position: absolute;
+   top: 50px;
+   left: 10px;
+  }
+  div.absolute6
+  {
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+  }
+
+ </style>
+ <link rel="stylesheet" href="style.css" >
+</head>
+
+<!--***********************************************
+  BODY TAG  
+    ***********************************************-->
+
+<body>
+ <div class="absolute0">
+ <img src="" width="170" height="580" />
+ </div>
+
+ <div class="absolute6">
+ <img src="12-15_free-file.png">
+ </div>
+ 
+ <div class="absolute">
+   <img src="guitar1.png" width="150" height="200"/>
+</div>
+ 
+ 
+ <div class="absolute4">
+    <div class="container" >
+     <button class="btn btn4">♫</button>
+     <br>
+     <button class="btn btn3">♪</button>
+     <br>
+     <button class="btn btn2">♪</button>
+     <br>
+     <button class="btn btn1">♫</button>
+    </div>
+ </div>
+
+</body>
+</html>

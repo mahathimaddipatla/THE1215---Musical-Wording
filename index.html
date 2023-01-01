@@ -2,11 +2,14 @@
 <html>
 <head>
   <title>The 1215</title>
+  <script src="js/flute.js" type="application/javascript"></script>
 <script>
   function jsredir() {
-    window.location.href = "encdec1.html";
     var usertext;
+    var count;
     sessionStorage.setItem("usertext", t.value);
+    sessionStorage.setItem("count", 0);
+    window.location.href = "encdec1.html";
 }
 function secret(){
   window.location.href = "3.html";
@@ -42,13 +45,9 @@ function validation() {
 
 <!--***********************************************
   BODY TAG  
-    ***********************************************-->
+  ***********************************************-->
 
 <body>
-
-
-
-
  <div class="absolute0">
  <img src="images/dem11.png" width="170" height="580" />
  </div>
@@ -64,15 +63,13 @@ function validation() {
      <br><br><br><br><br><br>
      <button class="btn btn4"onclick="validation()">♫</button>
      <br>
-     
+
 <!--
      <button class="btn btn3">♪</button>
      <br>
      <button class="btn btn2">♪</button>
      <br>
      <button class="btn btn1">♫</button>
-
-
 -->
 
     </div>

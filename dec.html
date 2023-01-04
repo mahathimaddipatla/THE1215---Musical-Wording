@@ -1,0 +1,39 @@
+<!DOCTYPE html>    
+<html> 
+<head>
+  <script src="js/pro.js" type="application/javascript"></script>
+  <script>
+    function jsredir() {
+      dec();
+      //window.location.href = "encdec1.html";
+  }
+  function validation() {
+    console.log(dectext);
+    if (dectext.value == "")
+      alert("TextBox is empty");
+    else
+      jsredir();
+  }
+  </script>
+ <style>
+ body 
+  {
+  background-image: url('images/4A.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: right;
+  }  
+ </style>
+
+ <link rel="stylesheet" href="styles/style.css" >
+</head> 
+<body>    
+  <textarea  type="text" id="dectext" style="color: black; background-color: transparent; border-radius: 150px; padding-left: 100px; padding-right: 100px;" rows="15" cols="80"  placeholder="Your encrypted text goes here..."></textarea>
+<div class="absolute4">
+    <div class="container" >
+     <br><br><br><br><br><br>
+     <button class="btn btn4" onclick="validation()">♫</button>
+     <br>
+</body>    
+</html>

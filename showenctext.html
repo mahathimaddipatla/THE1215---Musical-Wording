@@ -1,0 +1,19 @@
+<html> 
+<head>
+ <style>
+ body 
+  {
+  background-image: url('images/4A.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: right;
+  }  
+ </style>
+</head> 
+<body>    
+<h1>THE ENCRYPTED TEXT IS..</h1>
+  <textarea  type="text" id="enctext" style="color: black; background-color: transparent; border-radius: 150px; padding-left: 100px; padding-right: 100px; font-size: 1.2em;" rows="15" cols="80"  placeholder="your decrypted text is..."></textarea>
+  <script>enctext.value=sessionStorage.getItem("encryptedtext")</script>
+</body>
+</html>

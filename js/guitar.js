@@ -45,7 +45,9 @@ const startButton = document.getElementById('#startButton');//instead of using d
 //console.log(txt);
 
 function playNext() { 
-  txt = document.getElementById("d1").value.toUpperCase()
+  //txt = document.getElementById("d1").value.toUpperCase()
+  txt=sessionStorage.getItem("usertext").toUpperCase()
+
   if (i < txt.length) { 
     //audio = new Audio(audioArray[audioPointer]);
     if (!(txt[i] in mus)){

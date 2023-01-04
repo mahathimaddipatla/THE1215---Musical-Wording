@@ -2,22 +2,25 @@ let button = document.getElementById("button")
 //const enc = ["𝄞", "𝄟", "𝄠", "𝄡", "𝄢", "𝄣" ,"𝄤","𝄋","♮","♯","♫","♭","𝆗","𝄥","𝆹𝅥𝅮","𝆺𝅥𝅮","𝆹𝅥𝅯","𝆺𝅥𝅯","♩","♪","𝄦","𝅗𝅥","𝅘𝅥","𝅘𝅥𝅮","𝅘𝅥𝅯","𝅘𝅥𝅰" ];
 const encil = {
   "A": "𝄞", B: "𝄟",C: "𝄠",D: "𝄡",E: "𝄢",F: "𝄣",G: "𝄤",H: "𝄋",I: "♮",J: "♯",K: "♫",L: "♭",M: "𝆗",N: "𝄥",O: "𝆹𝅥𝅮",P: "𝆺𝅥𝅮",Q: "𝆹𝅥𝅯",R: "𝆺𝅥𝅯",S: "♩",T: "𝄦",U: "𝅗𝅥", V: "𝆓",  /*&#119187*/ W: "𝅘𝅥", X: "𝅘𝅥𝅮"
-  , Y: "𝅘𝅥𝅯", Z: "𝅘𝅥𝅰"," ":"𝄇"  //&#119047;	\x1d107
+  , Y: "𝅘𝅥𝅯", Z: "𝅘𝅥𝅰"," ": " " //" ":"𝄇"  //&#119047;	\x1d107
 }
 
 
 let txt="";
 function enc()
 {
-txt = document.getElementById("ide").value.toUpperCase()
+txt = document.getElementById("enctext").value.toUpperCase()
 console.log(txt);
 let s="";
 
 for (const char of txt){
    s += char in encil ? encil[char] : char;
 }
-document.getElementById("t2").innerHTML = s;
+var encryptedtext;
+sessionStorage.setItem("encryptedtext", s);
 console.log(s);
+window.location.href = "showenctext.html";
+//document.getElementById("dectext").innerHTML = s;
 /*console.log(typeof(s))
 console.log(s.length)
 console.log(s.charAt(5))
@@ -28,7 +31,7 @@ return s;
 const decil = {
 
     "𝄞":"A","𝄟":"B","𝄠":"C","𝄡":"D","𝄢":"E","𝄣":"F","𝄤":"G","𝄋":"H","♮":"I","♯":"J","♫":"K","♭":"L","𝆗":"M","𝄥":"N","𝆹𝅥𝅮":"O","𝆺𝅥𝅮":"P","𝆹𝅥𝅯":"Q","𝆺𝅥𝅯":"R","♩":"S","𝄦":"T","𝅗𝅥":"U","𝆓":"V","𝅘𝅥":"W",
-    "𝅘𝅥𝅮":"X","𝅘𝅥𝅯":"Y","𝅘𝅥𝅰":"Z","𝄇":" "  
+    "𝅘𝅥𝅮":"X","𝅘𝅥𝅯":"Y","𝅘𝅥𝅰":"Z"," ":" " //"𝄇":" "  
 
    //&#119047;	\x1d107
  }
@@ -36,19 +39,23 @@ const decil = {
 let tex="";
 function dec()
 {
-tex = document.getElementById("dde").value
+tex = document.getElementById("dectext").value
 console.log(tex);
 let d="";
 
 for (const char of tex){
    d += char in decil ? decil[char] : char;
 }
-document.getElementById("t3").innerHTML = d;
+var decryptedtext;
+sessionStorage.setItem("decryptedtext", d);
+//document.getElementById("t3").innerHTML = d;
 console.log(d);
+window.location.href = "showdectext.html";
 /*console.log(typeof(d))
 console.log(d.length)
 console.log(d.charAt(5))
 console.log+encil.A);*/
+
 return d;
 }
 
